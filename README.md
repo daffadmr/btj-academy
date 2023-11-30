@@ -10,15 +10,15 @@
 
 ## Jawaban Nomor 1
 ### Clone repository yang telah dikerjakan sebelumnya
-```
+```bash
 git clone https://github.com/daffadmr/btj-academy.git
 ```
 ### Masuk ke direktori repo yang telah di-clone
-```
+```bash
 cd btj-academy
 ```
 ### Buat Dockerfile dengan VIM pada VM
-```
+```bash
 touch Dockerfile
 vim Dockerfile
 ```
@@ -34,22 +34,22 @@ CMD ["python", "todo_list.py"]
 ```
 
 ### Build Dockerfile
-```
+```bash
 docker build -t todo-list-app:v1.0 .
 ```
 
 ## Jawaban Nomor 2
 ### Jalankan images sebagai container pada port 8081
-```
+```bash
 docker run -it -p 8081:8081 --name todo-list-daffa todo-list-app:v1.0
 ```    
 ### Cek apakah container sudah berjalan
-```
+```bash
 docker ps
 ```
 ## Jawaban Nomor 3
 ### Melihat IP yang digunakan whoami
-```
+```bash
 docker inspect -f "{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}" whoami
 ```
 ### Output
@@ -58,11 +58,11 @@ docker inspect -f "{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}" who
 ```
 ## Jawaban Nomor 4
 ### Lakukan inspect pada whoami
-```
+```bash
 docker inspect whoami
 ```
 ### Ditemukan pada mounts
-```
+```json
 "Mounts": [
             {
                 "Type": "bind",
@@ -75,16 +75,16 @@ docker inspect whoami
         ]
 ```
 ### Lalu jalankan perintah
-```
+```bash
 docker exec -it whoami bin/sh
 ```
 ### Lihat file apa yang ada di direktori dengan perintah
-```
+```bash
 ls tmp/system
 ```
 
 ### Ditemukan file bernama whoami, lalu jalankan perintah
-```
+```bash
 cat tmp/system/whoami
 ```
 
