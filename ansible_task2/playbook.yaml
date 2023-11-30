@@ -1,0 +1,25 @@
+- name: Task 2 Ansible - Daffa
+  hosts: btj-academy
+  become: true
+  tasks:
+    - name: Copy files inside flask folder to remote server
+      copy:
+        src: "./flask/"
+        dest: "/home/daffadamarardhika/ansible_task2"
+
+    - name: Build docker image
+      community.docker.docker_image:
+        name: "flask-app-daffa"
+        tag: "v1.0"
+        build:
+          path: "/home/daffadamarardhika/ansible_task2"
+        source: build
+
+    - name: Run docker container
+      docker_container:
+        name: "daffa"
+        image: "flask-app-daffa:v1.0"
+        interactive: true
+        tty: true
+        ports:
+          - "9999:9999"
