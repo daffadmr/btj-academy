@@ -1,7 +1,7 @@
 # Daffa Damar Ardhika
 
-### [Ansible Task 1](ansible_task1/README.md)
-### [Ansible Task 2](ansible_task2/README.md)
+### [Ansible Task 1](https://github.com/daffadmr/btj-academy/tree/main/ansible_task1)
+### [Ansible Task 2](https://github.com/daffadmr/btj-academy/tree/main/ansible_task2)
 
 ## Simple Task - Development Environment - 27 November 2023
 

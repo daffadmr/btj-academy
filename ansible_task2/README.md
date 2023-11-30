@@ -112,9 +112,9 @@ docker ps -a | grep flask-app-daffa
 ![container_works](photos/container_works.png)
 
 Route yang dihasilkan:
-- http://btj-academy.bangunindo.io:9999/
-![index_route](photos/index_route.png)
-- http://btj-academy.bangunindo.io:9999/projects
+- http://btj-academy.bangunindo.io:9999/ \
+![index_route](photos/index_route.png) 
+- http://btj-academy.bangunindo.io:9999/projects \
 ![projects_route](photos/projects_route.png)
-- http://btj-academy.bangunindo.io:9999/blogs
+- http://btj-academy.bangunindo.io:9999/blogs \
 ![blogs_route](photos/blogs_route.png)
