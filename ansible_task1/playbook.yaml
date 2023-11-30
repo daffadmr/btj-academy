@@ -1,0 +1,11 @@
+- name: Task 1 Ansible - Daffa
+  hosts: btj-academy
+  become: true
+  tasks:
+    - docker_container:
+        name: "daffa"
+        image: "todo-list-app:v1.0"
+        interactive: true
+        tty: true
+        ports:
+          - "8089:8089"
