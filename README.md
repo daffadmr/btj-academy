@@ -1,5 +1,8 @@
 # Daffa Damar Ardhika
 
+### [Ansible Task 1](ansible_task1/README.md)
+### [Ansible Task 2](ansible_task2/README.md)
+
 ## Simple Task - Development Environment - 27 November 2023
 
 1. Buatlah image dari aplikasi sederhana yang sudah dibuat
