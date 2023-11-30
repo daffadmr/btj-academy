@@ -48,7 +48,7 @@ CMD ["python", "app.py"]
   tasks:
     - name: Copy files inside flask folder to remote server
       copy:
-        src: "./flask/"
+        src: "./flask_app/"
         dest: "/home/daffadamarardhika/ansible_task2"
 
     - name: Build docker image
